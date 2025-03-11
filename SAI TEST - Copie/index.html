@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>COUP D'POUCE</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/CSInterface.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+    <div class="encart">
+        <h2>Contenu du dossier</h2>
+        <div id="folderPath" class="folder-path"></div>
+        <ul id="fileList" class="file-list"><li>Chargement...</li></ul>
+    </div>
+    <div class="bottom-bar">
+        <button id="selectFolderButton">Charger le dossier</button>
+        <button id="refreshButton">🗘</button>
+    </div>
+    <!-- Input caché pour simuler la sélection -->
+    <input type="file" id="fileInput" style="display: none;" webkitdirectory>
+</body>
+</html>

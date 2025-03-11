@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #2d2d2d;
+    color: #ffffff;
+}
+
+.encart {
+    background-color: #3a3a3a;
+    border: 1px solid #555;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 5px 0;
+    border-bottom: 1px solid #666;
+}
+
+button {
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #666;
+}

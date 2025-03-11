@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionManifest Version="6.0" ExtensionBundleId="com.example.myextension">
+    <ExtensionList>
+        <Extension Id="com.example.myextension" Version="1.0" />
+    </ExtensionList>
+    <ExecutionEnvironment>
+        <HostList>
+            <Host Name="PHXS" Version="[22.0, 99.9]" />
+            <Host Name="ILST" Version="[26.0, 99.9]" />
+        </HostList>
+        <LocaleList>
+            <Locale Code="All" />
+        </LocaleList>
+        <RequiredRuntimeList>
+            <RequiredRuntime Name="CSXS" Version="6.0" />
+        </RequiredRuntimeList>
+    </ExecutionEnvironment>
+    <DispatchInfoList>
+        <Extension Id="com.example.myextension">
+            <DispatchInfo>
+                <Resources>
+                    <MainPath>./index.html</MainPath>
+                    <ScriptPath>./main.js</ScriptPath>
+                    <CEFCommandLine>
+                        <Parameter>--enable-nodejs</Parameter>
+                    </CEFCommandLine>
+                </Resources>
+                <UI>
+                    <Type>Panel</Type>
+                    <Menu>Mon Extension</Menu>
+                    <Geometry>
+                        <Size>
+                            <Height>400</Height>
+                            <Width>300</Width>
+                        </Size>
+                    </Geometry>
+                </UI>
+            </DispatchInfo>
+        </Extension>
+    </DispatchInfoList>
+</ExtensionManifest>

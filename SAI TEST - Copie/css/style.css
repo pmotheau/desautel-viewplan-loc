@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #2d2d2d;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.encart {
+    background-color: #3a3a3a;
+    border: 1px solid #555;
+    border-radius: 0px;
+    padding: 15px;
+    flex: 1;
+    overflow-y: auto;
+}
+
+h2 {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+}
+
+.folder-path {
+    font-size: 12px;
+    color: #bbbbbb;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 5px 0;
+    border-bottom: 1px solid #666;
+}
+
+button {
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #666;
+}
+
+.file-link {
+    font-size: 12px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.file-link:hover {
+    text-decoration: underline;
+}
+
+.bottom-bar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: #2d2d2d;
+    border-top: 1px solid #555;
+}
+
+/* Styles pour la barre de défilement */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #2d2d2d;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 10px;
+    border: 3px solid #2d2d2d;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #666;
+}

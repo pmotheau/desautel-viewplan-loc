@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ExtensionBundleId="com.votrecompagnie.monpanoncep" ExtensionBundleVersion="1.0" Version="6.0">
+    <ExtensionList>
+        <Extension Id="com.votrecompagnie.monpanoncep.panel" Version="8.0"/>
+    </ExtensionList>
+    <ExecutionEnvironment>
+        <HostList>
+            <Host Name="ILST" Version="[20.0,99.0]"/>
+        </HostList>
+        <LocaleList>
+            <Locale Code="All"/>
+        </LocaleList>
+        <RequiredRuntimeList>
+            <RequiredRuntime Name="CSXS" Version="11.0"/>
+        </RequiredRuntimeList>
+    </ExecutionEnvironment>
+    <DispatchInfoList>
+        <Extension Id="com.votrecompagnie.monpanoncep.panel">
+            <DispatchInfo>
+                <Resources>
+                    <MainPath>./index.html</MainPath> <!-- Chemin relatif à la racine -->
+                    <ScriptPath>./main.js</ScriptPath>
+                    <CEFCommandLine>
+                        <Parameter>--enable-nodejs</Parameter>
+                    </CEFCommandLine>
+                </Resources>
+                <Lifecycle>
+                    <AutoVisible>true</AutoVisible>
+                </Lifecycle>
+                <UI>
+                    <Type>Panel</Type>
+                    <Menu>COUP D'POUCE</Menu>
+                    <Geometry>
+                        <Size>
+                            <Width>300</Width>
+                            <Height>400</Height>
+                        </Size>
+                    </Geometry>
+                </UI>
+            </DispatchInfo>
+        </Extension>
+    </DispatchInfoList>
+</ExtensionManifest>
